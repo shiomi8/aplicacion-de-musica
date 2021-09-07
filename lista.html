@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos lista.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Rumeal</title>
+</head>
+<body>
+    <div class="main-container">
+        <img class="fondo" src="img/fodno estrellas.jpg" alt="">
+        <div class="bg-container">
+            <header class="menu-container">
+                <div class="logo-container">
+                    <a href=""><img class="btn-menu" id="menu-btn" src="img/menu.png" alt=""></a>
+                    <a href="menu.html"><img class="btn-abajocell" src="img/chevron-abajo.png" alt=""></a>
+                    <a href="menu.html"><img class="btn-audiculares" src="img/auriculares.svg" alt=""></a>
+                    <h3>Resientes</h3>
+                    <a href="menu.html"><img class="btn-marca" src="img/marca.svg" alt=""></a>
+                </div>
+                <nav class="main-menu">
+                    <img class="btn-menu-cell" id="cambiar-cuenta" src="img/usuario-de-perfil.png" alt="">
+                    <ul class="list-cuenta" id="cuenta-list">
+                        <li>
+                            <a href="#"><img class="usuario" src="img/usuario.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#">mi perfil</a>
+                        </li>
+                        <li>
+                            <a href="#">configuracion</a>
+                        </li>
+                    </ul>
+                    <img class="menu" id="menu-btn" src="img/menu.png" alt="">
+                    <ul class="list-menu" id="menu-list">
+                        <li>
+                            <a href="#"><img class="usuario" src="img/usuario.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#">mi perfil</a>
+                        </li>
+                        <li>
+                            <a href="#">configuracion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="opciones">
+                <img class="espacio" src="img/casa-silueta-negra-sin-puerta.png" alt="">
+                <img src="img/carpeta-de-lista-de-reproduccion-de-musica.png" alt="">
+                <img src="img/explorar.png" alt="">
+                <img src="img/subir.png" alt="">
+            </div>
+            <div class="play-contenido">
+                <div class="listas-de-musica">
+                    <div class="cover-image">
+                        <img class="img-1" id="image" src="img/1.png" alt="">
+                    </div>
+                    <div class="invicible">
+                        <div>
+                            <img src="img/2.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/2f.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/2a.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/5f.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/3a.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/7f.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/6f.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="controles-play">
+                    <div class="tiempo">
+                        <input id="tiempo" min="0"type="range">
+                    </div>
+                    <div class="decripcion">
+                        <div class="nombre">
+                            <img src="img/me-gusta.png" alt="">
+                            <div class="autor">
+                                <h4>Smile Again</h4>
+                                <h6>blackbear•everything means nothing</h6>
+                            </div>
+                            <img src="img/corazon-roto.png" alt="">
+                        </div>
+                        <div class="play-siguiente-atras">
+                            <img id="" src="img/pista-hacia-atras.png" alt="">
+                            <img id="play-pause" class="grande" src="img/simbolo-de-pausa.png" alt="">
+                            <img id="" src="img/adelante.png" alt="">
+                        </div>
+                        <div class="volumen-repecicion">
+                            <img src="img/repetir.png" alt="">
+                            <img src="img/aleatorio.png" alt="">
+                            <div class="volumen">
+                                <img src="img/volumen-reducido.png" alt="">
+                                <input id="volume" type="range">
+                                <button id="volume-up">+</button>
+                                <button id="volume-down">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="audios/blackbear - smile again Official Music Video _160k.mp3"></audio>
+    <script src="js/js lista.js"></script>
+</body>
+</html>

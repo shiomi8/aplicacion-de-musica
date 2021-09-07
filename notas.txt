@@ -1,0 +1,42 @@
+<div class="trasladar espacio">
+                    <img src="img/casa-silueta-negra-sin-puerta.png" alt="">
+                </div>
+                <div class="trasladar">
+                    <img src="img/carpeta-de-lista-de-reproduccion-de-musica.png" alt="">
+                </div>
+                <div class="trasladar">
+                    <img src="img/explorar.png" alt="">
+                </div>
+                <div class="trasladar">
+                    <img src="img/subir.png" alt="">
+                </div>
+
+
+
+                <img class="fondo" src="img/fodno estrellas.jpg" alt="">
+
+
+
+
+
+                const volume = document.querySelector("volume");
+volume.addEventListener("change", function(e){
+    audio.volume = e.currentTarget.value /100;
+})
+
+
+
+
+document.addEventListener("keyup",(event)=>{
+    if(event.key=="ArrowUp"){
+        audio.volume=audio.volume + 0.1
+    }
+    else
+    if(event.key=="ArrowUp"){
+        audio.volume=audio.volume - 0.1
+    }
+})
+
+
+
+$ curl -v -H "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" https://github.com/shiomi8/aplicacion-de-musica.git/shiomi8/issues
