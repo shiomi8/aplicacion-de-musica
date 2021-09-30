@@ -195,10 +195,7 @@ img{
     align-items: flex-start;
     justify-content: center;
 }
-.play-siguiente-atras img{
-    padding: 3em 2em 3em 2em;
-    width: 2.5em;
-}
+
 .volumen-repecicion{
     display: flex;
     align-items: flex-start;
@@ -219,7 +216,7 @@ img{
         margin-top: 6em;
         display: block;
     }
-    .invicible div{
+    .list-item{
         align-items: center;
         display: flex;
         margin: 10px;
@@ -227,10 +224,14 @@ img{
         height: 4em;
         background-color: rgba(255, 255, 255, 0.43);
         border-radius: 6px;
+    } 
+    .btn-abajocell{
+        display: none;
     }
     .invicible div img{
-        width: 2em;
+        width: 2.5em;
         margin-left: 1em;
+        margin-right: 0.8em;
     }
     .contenido-de-musica{
         margin-left: 5em;
