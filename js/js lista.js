@@ -83,9 +83,9 @@ const play_audio = (id) =>{
         audio.play();
         play_card(res);
         if(is_playing){
-            audio.pause();
+            
             cover_card_img.style.animationPlayState="paused"
-            play_pause_icon.classList.add('fa-play')
+            
             play_pause_icon.classList.remove('fa-pause')
             is_playing=false;      
         }
