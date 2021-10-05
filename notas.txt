@@ -39,9 +39,10 @@ document.addEventListener("keyup",(event)=>{
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-git remote set-url origin https://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@github.com/shiomi8/aplicacion-de-musica.git
+git remote set-url origin https://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@github.com/shiomi8/examen-bimestral-05.git
 
-
+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
+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
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 const image = document.getElementById("image");
 const play_pause_btn = document.getElementById("play-pause");
@@ -341,3 +342,132 @@ play_pause_btn.addEventListener("click",()=>{
     }
 }
 );
+---------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen bimestral</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div  id="A" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="S" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="D" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="F" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="G" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="H" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="J" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="J" class="cuadros-blancos"></div>
+        <div  id="tecla" class="cuadros-negro"></div>
+        <div  id="J" class="cuadros-blancos"></div>
+    </div>
+    <audio id="do" src="audio/">/</audio>
+    <audio id="re" src="audio/7 SONIDOS DE SUSPENSO - AUDIO HD_50k (mp3cut.net) (3).mp3">/</audio>
+    <audio id="mi" src="audio/7 SONIDOS DE SUSPENSO - AUDIO HD_50k (mp3cut.net) (4).mp3">/</audio>
+    <audio id="fa" src="audio/7 SONIDOS DE SUSPENSO - AUDIO HD_50k (mp3cut.net) (5).mp3">/</audio>
+    <audio id="sol" src="audio/7 SONIDOS DE SUSPENSO - AUDIO HD_50k (mp3cut.net).mp3">/</audio>
+    <audio id="la" src="audio/7 SONIDOS DE SUSPENSO - AUDIO HD_50k.mp3">/</audio>
+    <audio id="si" src="audio/7 SONIDOS DE SUSPENSO - AUDIO HD_50k (mp3cut.net) (2).mp3">/</audio>
+</body>
+<script src="js/js.js"></script>
+</html>
+---------------------------------------------------------------------
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    display: flex;
+}
+
+.cuadros-blancos{
+    width: 100px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #333;
+}
+.cuadros-negro{
+    width: 60px;
+    height: 240px;
+    background-color: black;
+    margin-left: -30px;
+    margin-right: -30px;
+    z-index: 2;
+}
+--------------------------------------------------
+const btn_a = document.getElementById("A")
+const btn_s = document.getElementById("S")
+const btn_d = document.getElementById("D")
+const btn_f = document.getElementById("F")
+const btn_g = document.getElementById("G")
+const btn_h = document.getElementById("H")
+const btn_j = document.getElementById("J")
+
+const audioDo = document.getElementById("do")
+const audioRE = document.getElementById("re")
+const audioMI = document.getElementById("mi")
+const audioFA = document.getElementById("fa")
+const audioSOL = document.getElementById("sol")
+const audioLA = document.getElementById("la")
+const audioSI = document.getElementById("si")
+
+document.addEventListener("keypress", (event) =>{
+    if(event.key == "a"){
+        audioDO.play();
+    }
+    else if(event.key == "s"){
+        audioRE.play();
+    }
+    else if(event.key == "d"){
+        audioMI.play();
+    }
+    else if(event.key == "f"){
+        audioFA.play();
+    }
+    else if(event.key == "g"){
+        audioSOL.play();
+    }
+    else if(event.key == "h"){
+        audioLA.play();
+    }
+    else if(event.key == "j"){
+        audioSI.play();
+    }
+});
+
+btn_a.addEventListener("click", ()=>{
+    audioDO.play();
+})
+btn_s.addEventListener("click", ()=>{
+    audioRE.play();
+})
+btn_d.addEventListener("click", ()=>{
+    audioMI.play();
+})
+btn_f.addEventListener("click", ()=>{
+    audioFA.play();
+})
+btn_g.addEventListener("click", ()=>{
+    audioSOL.play();
+})
+btn_h.addEventListener("click", ()=>{
+    audioLA.play();
+})
+btn_j.addEventListener("click", ()=>{
+    audioSI.play();
+})
