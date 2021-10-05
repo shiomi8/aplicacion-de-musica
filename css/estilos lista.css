@@ -35,6 +35,11 @@ img{
     background-color: rgba(228, 237, 220, 1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
+.buscar{
+    display: flex;
+    align-items: center;
+}
+
 .logo-container{
     display: flex;
     align-items: center;
@@ -69,9 +74,19 @@ img{
 .lupa{
     width: 2.5em;
 }
+
 .principal-lupa{
-    width: 1.7em;
     padding: 0.8em;
+    transition: all 500ms ease-out;
+}
+#icon-search{
+    font-size: 23px;
+}
+#perfil{
+    font-size: 23px;
+}
+#barra-menu{
+    font-size: 23px;
 }
 .menu{
     width: 2em;
@@ -175,16 +190,25 @@ img{
     align-items: flex-start;
     justify-content: center;
 }
-.autor{
+
+.reaccion-activa{
+    color: red;
+}
+#tamaño{
+    font-size: 30px;
+}
+.song-data{
     align-items: center;
 }
-.autor h4{
+.song-data div .name{
     display: flex;
     justify-content: center;
     margin: 0 20px 1px 20px;
     font-size: 1.5em;
 }
-.autor h6{
+.song-data div .artis{
+    display: flex;
+    justify-content: center;
     margin: 0 15px 1px 15px;
 }
 .nombre img{
@@ -203,6 +227,28 @@ img{
 }
 .volumen-repecicion img{
     width: 1.5em;
+}
+.atras-next{
+    background: transparent; 
+    border: none;
+    padding: 1px 32px;
+    color: black;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 20px;
+    text-shadow: 0px 5px 15px rgb(0,0,0,0.60);
+    cursor: pointer;
+}
+.stop{
+    background: transparent; 
+    border: none;
+    padding: 1px 32px;
+    color: black;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 30px;
+    text-shadow: 0px 5px 15px rgb(0,0,0,0.60);
+    cursor: pointer;
 }
 #tiempo{
     width: 80%;
@@ -296,5 +342,10 @@ img{
         width: 33em;
         margin: 6em 4em 5px 2em;
     }
-    
+    .atras-next{
+        font-size: 40px;
+    }
+    .stop{
+        font-size: 50px;
+    }
 }
