@@ -180,6 +180,7 @@ volume_down_btn.addEventListener('click',()=>{
   audio.volume = audio.volume - 0.1;
 })
 reacion_btn.addEventListener('click',likear);
+
 let estado = 0;
 function likear(){
   if(estado === 0){

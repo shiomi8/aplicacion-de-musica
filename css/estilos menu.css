@@ -147,7 +147,7 @@ img{
         font-size: 2em;
     }
     .listas-musica img{
-        width: 12.5em;
+        width: 12em;
     }
 }
 @media screen and (min-width:720px) and (orientation:landscape){
